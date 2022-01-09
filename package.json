@@ -2,9 +2,10 @@
   "name": "jumbo",
   "version": "1.1.0",
   "description": "Just a Universal Mineflayer Bot - Opensourced",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "lint": "npx eslint ."
   },
   "keywords": [
     "mineflayer",
@@ -14,8 +15,6 @@
   "author": "Hedgie",
   "license": "ISC",
   "dependencies": {
-    "child_process": "^1.0.2",
-    "delay": "^5.0.0",
     "mineflayer": "^3.14.1",
     "mineflayer-auto-eat": "^2.3.3",
     "mineflayer-blockfinder": "^0.0.7",
@@ -24,5 +23,13 @@
     "mineflayer-projectile": "^0.0.3",
     "mineflayer-pvp": "^1.0.2",
     "vec3": "^0.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eqeqeq-fix": "^1.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
   }
 }
