@@ -18,9 +18,10 @@
     "delay": "^5.0.0",
     "mineflayer": "^3.14.1",
     "mineflayer-auto-eat": "^2.3.3",
+    "mineflayer-blockfinder": "^0.0.7",
     "mineflayer-death-event": "^1.0.0",
-    "mineflayer-pathfinder": "^1.8.0",
-    "mineflayer-projectile": "0.0.3",
+    "mineflayer-pathfinder": "^1.9.0",
+    "mineflayer-projectile": "^0.0.3",
     "mineflayer-pvp": "^1.0.2",
     "vec3": "^0.1.7"
   }

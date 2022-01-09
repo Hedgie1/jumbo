@@ -1,3 +1,2 @@
-cd jumbo
-node index.js
+node jumbo/index.js
 pause
