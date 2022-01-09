@@ -1,0 +1,19 @@
+{
+    "name": "Jumbo",
+    "nameMinions": "Minion",
+
+    "host": "kkweb.sk",
+    "port": "25566",
+    "version": "1.17.1",
+  
+    "myLeader": "Hedgedoge", 
+    "joinMessage": "",
+ 
+    "depositItems": true, 
+    "chatColors": false, 
+
+    "authmePassword": "none",
+    "startDelayInMS": 5000,
+    "towerBlock": "dirt",
+    "mineBlocksUndefined": 1
+}

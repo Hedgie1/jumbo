@@ -1,0 +1,27 @@
+{
+  "name": "jumbo",
+  "version": "1.1.0",
+  "description": "Just a Universal Mineflayer Bot - Opensourced",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mineflayer",
+    "minecraft",
+    "bot"
+  ],
+  "author": "Hedgie",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "delay": "^5.0.0",
+    "mineflayer": "^3.14.1",
+    "mineflayer-auto-eat": "^2.3.3",
+    "mineflayer-death-event": "^1.0.0",
+    "mineflayer-pathfinder": "^1.8.0",
+    "mineflayer-projectile": "0.0.3",
+    "mineflayer-pvp": "^1.0.2",
+    "vec3": "^0.1.7"
+  }
+}
