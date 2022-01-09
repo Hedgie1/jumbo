@@ -2,11 +2,11 @@
     "name": "Jumbo",
     "nameMinions": "Minion",
 
-    "host": "kkweb.sk",
-    "port": "25566",
+    "host": "localhost",
+    "port": "25565",
     "version": "1.17.1",
   
-    "myLeader": "Hedgedoge", 
+    "myLeader": "Player9309", 
     "joinMessage": "",
  
     "depositItems": true, 
