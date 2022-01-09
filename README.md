@@ -20,8 +20,8 @@ JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a M
 
 ## 🧰 Installation
 
-- You need to have **node.js** installed to run the bot.
-- Download the zip file and extract.
+- You need to have **node.js** (recommended version: v14) installed to run the bot.
+- Download the newest zip file from Versions tab and extract.
 - Run `installation.bat` file.
 - Setup IP address, port, name.. in `config.json` file.
 - Run the bot using `run_bot.bat` file!
