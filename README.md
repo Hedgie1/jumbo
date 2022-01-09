@@ -79,6 +79,7 @@ Commands are split into 4 modules.
 
 ## 🗺️ Roadmap
 
+- Update Checker
 - System to guard an area.
 - Kit system that is seen on anarchy servers.
 - Command to toggle some config features.
