@@ -8,7 +8,7 @@ const dead = require("mineflayer-death-event")
 const autoeat = require("mineflayer-auto-eat")
 const vec3 = require('vec3')
 const delay = require('delay');
-const config = require('./config.json');
+const config = require('../config.json');
 
 const rngLimit = 1000; //Random number generator in nickname. Set this to a maximum value that can be generated.
 let nowAction, nowAttacking = false;

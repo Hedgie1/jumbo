@@ -18,6 +18,5 @@ IF "%NODE_VER%"=="%NULL_VAL%" (
 	EXIT
 ) ELSE (
 	echo A version of Node.js ^(%NODE_VER%^) is installed. Proceeding...
-	cd jumbo
-	npm install child_process delay mineflayer mineflayer-auto-eat mineflayer-blockfinder mineflayer-death-event mineflayer-pathfinder mineflayer-projectile mineflayer-pvp vec3
+	npm install
 )
