@@ -5,7 +5,7 @@ const setTimeout = require('node:timers');
 const mineflayer = require('mineflayer');
 const { pathfinder } = require('mineflayer-pathfinder');
 const pvp = require('mineflayer-pvp').plugin;
-const config = require('./config.json');
+const config = require('../config.json');
 
 let movements = ['forward', 'back', 'left', 'right'];
 let move;
@@ -72,14 +72,14 @@ function createNewBot(botName) {
         move = movements[Math.floor(Math.random() * movements.length)];
 
         for (let i = 0; i < 99; i++) {
-          setTimeout(() => {
+          setInterval(() => {
             if (moving === true) {
               bot.setControlState('jump', true);
               bot.setControlState(move, false);
               move = movements[Math.floor(Math.random() * movements.length)];
               bot.setControlState(move, true);
             }
-          }, i * 2000);
+          }, 2000);
         }
       }
     }
