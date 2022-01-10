@@ -22,7 +22,7 @@ function createNewBot(botName) {
     version: config.version,
   });
 
-  bot.once('login', () => {
+  bot.once('spawn', () => {
     bot.loadPlugin(pathfinder);
     bot.loadPlugin(pvp);
 

@@ -43,7 +43,7 @@ const plugins = [pathfinder, pvp, dead, autoeat];
 bot.loadPlugins(plugins);
 
 const system = () => {
-  bot.once('login', () => {
+  bot.once('spawn', () => {
     const mcData = require('minecraft-data')(bot.version);
 
     if (config.authmePassword !== 'none') {
