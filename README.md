@@ -31,8 +31,7 @@ JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a M
 
 Commands are split into 4 modules.
 
-**Random commands (no module)**:
--
+#### Random commands (no module):
 
 - **help** - Link to this github page.
 - **kill** - Kills the bot using /kill command. Bot must have OP and only bot leader can use this command.
@@ -40,29 +39,26 @@ Commands are split into 4 modules.
 - **spawn -num-** - Spawns minions - new bots, that have seperate code from main bot.
 - **stop** - Stops all actions.
 
-**Multiple bots commands**:
-- 
+#### Multiple bots commands:
 
 - **army** - All bots except main bot start attacking you.
 - **random** - All bots except main bot start moving in random direction.
 - **leave** - All bots except main bot leave the server.
 
-**Attack module:**
--
+#### Attack module:
 
 - **attack me** - Bot starts attacking you.
 - **attack nearest** - Bot starts attacking nearest player.
 - **attack -playername-** - Bot starts attacking provided player.
 
-**Inventory module:**
--
+#### Inventory module:
 
 - **inv drop -all/name of item-** - Bot drops provided item / all items.
 - **inv equip -name of item-** - Bot equips provided item in hand.
 - **inv deposit** - Bot deposits all items into nearest chest.   
 
-**Action module:**
--
+#### Action module:
+
 - **action come** - Bot comes to your position. 
 - **action follow** - Bot starts following you.    
 - **action tower -num-** - Bot starts building tower.    
