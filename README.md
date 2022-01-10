@@ -26,6 +26,19 @@ JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a M
 - Setup IP address, port, name.. in `config.json` file.
 - Run the bot using `run_bot.bat` file!
 
+## 🎈 Configuration
+
+- **name:** Name of the bot ingame.
+- **nameMinions:** Name of minion bots ingame.
+- **host, port, version:** Server info.
+- **myLeader:** Person that can use **tp** and **kill** commands.
+- **joinMessage:** Join message of minion bots. You can customize main bot join message in index.js.
+- **depositItems:** If the bot should deposit items into chest after mining/fishing/farming.
+- **chatColors:** If the bot should use chat formatting in chat. You need plugin for this, but it is fancy!
+- **authmePassword:** Password which bot will use to type /login and /register.
+- **startDelayInMS:** Start delay between minions. I recommend to set this atleast to 5000ms.
+- **towerBlock:** Which block should bot use to build towers.
+- **mineBlocksIfUndefined:** How much blocks should bot collect, if it isn't said in command.
     
 ## 🤖 Commands
 
