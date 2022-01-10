@@ -1,7 +1,6 @@
 'use strict';
 
 const cp = require('child_process');
-const setTimeout = require('node:timers');
 const delay = require('util').promisify(setTimeout);
 const mineflayer = require('mineflayer');
 const autoeat = require('mineflayer-auto-eat');
