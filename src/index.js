@@ -91,8 +91,8 @@ const system = () => {
       if (message === 'help') {
         bot.chat(
           config.chatColors
-            ? '&7You can find list of all commands and actions at &chttps://github.com/hedgie1/jambo&7.'
-            : 'You can find list of all commands and actions at https://github.com/hedgie1/jambo.',
+            ? '&7You can find list of all commands and actions at &chttps://github.com/hedgie1/jumbo&7.'
+            : 'You can find list of all commands and actions at https://github.com/hedgie1/jumbo.',
         );
         console.log(`${username} executed 'help' command.`);
       }
