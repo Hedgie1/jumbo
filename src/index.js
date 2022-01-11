@@ -1,7 +1,6 @@
 'use strict';
 
 const cp = require('child_process');
-const delay = require('util').promisify(setTimeout);
 const mineflayer = require('mineflayer');
 const autoeat = require('mineflayer-auto-eat');
 const dead = require('mineflayer-death-event');
@@ -10,6 +9,7 @@ const { GoalNear, GoalBlock, GoalFollow, GoalBreakBlock } = require('mineflayer-
 const pvp = require('mineflayer-pvp').plugin;
 const vec3 = require('vec3');
 const config = require('../config.json');
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 const rngLimit = 1000;
 let nowAction,
@@ -239,7 +239,7 @@ const system = () => {
         else if (args[1] === 'me') me();
         else player();
 
-        const nearest = () => {
+        function nearest () {
           if (nowAttacking !== false) {
             bot.chat(config.chatColors ? '&cERROR &7- I am already attacking!' : 'ERROR - I am already attacking!');
             return;
@@ -263,7 +263,7 @@ const system = () => {
           console.log('Attacking nearest player.');
         };
 
-        const me = () => {
+        function me () {
           if (nowAttacking !== false) {
             bot.chat(config.chatColors ? '&cERROR &7- I am already attacking!' : 'ERROR - I am already attacking!');
             return;
@@ -285,7 +285,7 @@ const system = () => {
           console.log(`Attacking ${username}`);
         };
 
-        const player = () => {
+        function player () {
           if (nowAttacking !== false) {
             bot.chat(config.chatColors ? '&cERROR &7- I am already attacking!' : 'ERROR - I am already attacking!');
             return;
@@ -500,7 +500,7 @@ const system = () => {
         if (args[1] === 'sleep') sleep();
         if (args[1] === 'follow') followCMD();
 
-        const fish = () => {
+        function fish () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -559,7 +559,7 @@ const system = () => {
           });
         };
 
-        const comeCMD = () => {
+        function comeCMD () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -582,7 +582,7 @@ const system = () => {
           console.log(`I am going to ${username}'s position.`);
         };
 
-        const followCMD = () => {
+        function followCMD () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -609,7 +609,7 @@ const system = () => {
           console.log(`I am following ${username}`);
         };
 
-        const tower = async () => {
+        async function tower () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -622,8 +622,8 @@ const system = () => {
           if (!args[2]) {
             bot.chat(
               config.chatColors
-                ? '&cERROR &7- Nesprávne použitie! Použi &aaction tower &e<blocks>&7.'
-                : "ERROR - Nesprávne použitie! Použi 'action tower <blocks>'.",
+                ? '&cERROR &7- Invalid usage! Use &aaction tower &e<blocks>&7 instead.'
+                : "ERROR - Invalid usage! Use 'action tower <blocks>' instead.",
             );
             return;
           }
@@ -632,8 +632,8 @@ const system = () => {
           if (!x) {
             bot.chat(
               config.chatColors
-                ? '&cERROR &7- Nesprávne použitie! Použi &aaction tower &e<blocks>&7.'
-                : "ERROR - Nesprávne použitie! Použi 'action tower <blocks>'.",
+                ? '&cERROR &7- Invalid usage! Use &aaction tower &e<blocks>&7 instead.'
+                : "ERROR - Invalid usage! Use 'action tower <blocks>' instead.",
             );
             return;
           }
@@ -681,7 +681,7 @@ const system = () => {
             bot.on('move', placeIfHighEnough);
             let tryCount = 0;
 
-            const placeIfHighEnough = () => {
+            function placeIfHighEnough () {
               if (bot.entity.position.y > jumpY) {
                 bot.placeBlock(towerBlock, vec3(0, 1, 0), err => {
                   if (err) {
@@ -708,7 +708,7 @@ const system = () => {
           }
         };
 
-        const sleep = () => {
+        function sleep () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -767,7 +767,7 @@ const system = () => {
           }
         };
 
-        const harvest = async () => {
+        async function harvest () {
           if (nowAction || nowAttacking) {
             bot.chat(
               config.chatColors
@@ -777,7 +777,6 @@ const system = () => {
             return;
           }
 
-          let checkCount;
           let crop = [];
           if (!args[2] || !args[3]) {
             bot.chat(
@@ -788,7 +787,7 @@ const system = () => {
             return;
           }
 
-          checkCount = parseInt(args[2]);
+          const checkCount = parseInt(args[2]);
 
           if (isNaN(checkCount)) {
             bot.chat(
@@ -847,7 +846,7 @@ const system = () => {
               // eslint-disable-next-line no-empty-function
               await bot.pathfinder.goto(collect).catch(() => {});
 
-              const breakCrop = async () => {
+              async function breakCrop () {
                 await bot.dig(h).catch(err => {
                   bot.chat(config.chatColors ? `&cERROR &7- ${err}` : `ERROR - ${err}`);
                 });
@@ -876,7 +875,7 @@ const system = () => {
           }
         };
 
-        const collect = async () => {
+        async function collect () {
           let countMine;
           if (nowAction || nowAttacking) {
             bot.chat(
