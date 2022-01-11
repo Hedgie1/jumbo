@@ -1,3 +1,4 @@
+@echo off
 set NULL_VAL=null
 set NODE_VER=%NULL_VAL%
 set NODE_EXEC=node-v14.18.1-x86.msi
