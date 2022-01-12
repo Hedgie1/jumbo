@@ -1,11 +1,12 @@
 {
   "name": "jumbo",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Just a Universal Mineflayer Bot - Opensourced",
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "lint": "npx eslint ."
+    "lint": "standard",
+    "fix": "standard --fix"
   },
   "keywords": [
     "mineflayer",
@@ -25,11 +26,6 @@
     "vec3": "^0.1.7"
   },
   "devDependencies": {
-    "eslint": "^8.6.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-eqeqeq-fix": "^1.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "standard": "^16.0.4"
   }
 }
