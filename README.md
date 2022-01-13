@@ -37,7 +37,7 @@ JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a M
 - **authmePassword:** Password which bot will use to type /login and /register.
 - **startDelayInMS:** Start delay between minions. I recommend to set this atleast to 5000ms.
 - **towerBlock:** Which block should bot use to build towers.
-- **mineBlocksIfUndefined:** How much blocks should bot collect, if it isn't said in command.
+- **mineBlocksUndefined:** How much blocks should bot collect, if it isn't said in command.
     
 ## 🤖 Commands
 
