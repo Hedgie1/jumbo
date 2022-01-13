@@ -1,7 +1,6 @@
 
 
 ![Logo](https://i.ibb.co/hmLHrzV/2022-01-07-0mc-Kleki.png)
-[![forthebadge](https://forthebadge.com/images/badges/approved-by-george-costanza.svg)](https://forthebadge.com)
 
 # ❓What is JUMBO?
 
