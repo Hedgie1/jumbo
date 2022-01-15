@@ -8,7 +8,7 @@ const config = require('../config.json')
 
 const movements = ['forward', 'back', 'left', 'right']
 let move
-let moving
+let moving = false
 let fighting = false
 
 createNewBot(process.argv[2])
@@ -64,21 +64,19 @@ function createNewBot (botName) {
     if (message === 'random') {
       if (moving === true) {
         bot.setControlState(move, false)
-        bot.setControlState('jump', false)
         moving = false
       } else if (moving === false) {
         moving = true
         move = movements[Math.floor(Math.random() * movements.length)]
-
         for (let i = 0; i < 99; i++) {
-          setInterval(() => {
-            if (moving === true) {
-              bot.setControlState('jump', true)
+          
+          setTimeout(() => {
+            if (moving == true) {
               bot.setControlState(move, false)
               move = movements[Math.floor(Math.random() * movements.length)]
               bot.setControlState(move, true)
             }
-          }, 2000)
+          }, (i * 2000))
         }
       }
     }
