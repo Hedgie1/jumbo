@@ -172,7 +172,7 @@ const system = () => {
         console.log(`Spawning ${botsToStart.length} minions.`)
 
         const startBot = botName => {
-          const command = `node minions.js ${botName}`
+          const command = `node src/minions.js ${botName}`
           cp.exec(command, (err, stdout, stderr) => {
             if (err) {
               console.log(`Error while starting ${botName}: ${err}`)
