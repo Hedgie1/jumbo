@@ -4,7 +4,10 @@
 
 # ❓What is JUMBO?
 
-JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a Minecraft robot made using [Mineflayer](https://github.com/PrismarineJS/Mineflayer) package and its addons. Supports MC version **1.17.1**. You need to have [Node.js](https://nodejs.org) installed to run the bot.
+JUMBO (**J**ust a **U**niversal **M**ineflayer **B**ot - **O**pensourced) is a Minecraft robot made using [Mineflayer](https://github.com/PrismarineJS/Mineflayer) package and its addons. You need to have [Node.js](https://nodejs.org) installed to run the bot.
+
+Tested Minecraft versions: **1.17.1**
+Doesn't work properly in: **1.8.9** and lower
 
 
 ## 🎈 Features
