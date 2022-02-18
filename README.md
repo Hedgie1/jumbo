@@ -100,7 +100,7 @@ Commands are split into 4 modules.
 
 ## 📍 Issues, PRs and contant
 
-- You can contact me on my [Discord Server](https://dsc.gg/hedgieserver) or add me as friend (**'h#1420**)
+- You can contact me on my [Discord Server](https://dsc.gg/hedgieserver) or add me as friend (**Hedgie#1420**)
 - Credits to AM - Help with coding and testing, thanks :)
 - This is my first github project, so expect lots of bugs. Please be nice.
 - If you want to report issue, you are welcome!
